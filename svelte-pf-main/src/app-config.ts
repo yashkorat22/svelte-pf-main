@@ -1,0 +1,28 @@
+export const appConfig = {
+  api_endpoint: 'https://app-api.dev10.pinkfish.dev/api/',
+  pf_paragon_id: '597be459-287f-46d8-a4d3-6841423d1a42',
+  aws_project_region: 'us-west-2',
+  aws_cognito_region: 'us-west-2',
+  aws_user_pools_id: 'us-west-2_zW5o8KvUN',
+  aws_user_pools_web_client_id: '62h8qcjtucpk0qrooq82h8vjnf',
+  oauth: {
+    domain: 'dev10-pinkfish-dev.auth.us-west-2.amazoncognito.com',
+    scope: ['email', 'openid', 'profile'],
+    identity_provider: 'Google',
+    redirectSignIn: 'http://localhost:3000',
+    redirectSignOut: 'http://localhost:3000/signin',
+    responseType: 'code',
+  },
+  federationTarget: 'COGNITO_USER_POOLS',
+  aws_cognito_username_attributes: ['EMAIL'],
+  aws_cognito_social_providers: ['GOOGLE'],
+  aws_cognito_signup_attributes: ['EMAIL'],
+  aws_cognito_mfa_configuration: 'OFF',
+  aws_cognito_mfa_types: ['SMS'],
+  aws_cognito_password_protection_settings: {
+    passwordPolicyMinLength: 8,
+    passwordPolicyCharacters: [],
+  },
+  aws_cognito_verification_mechanisms: ['EMAIL'],
+  defaultAgents: ['nodejs-openai-gpt-4o','playwright-engineer'],
+};

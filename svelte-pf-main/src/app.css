@@ -1,0 +1,12 @@
+/* app.css */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+/* Tailwind CSS base, components, and utilities */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Apply the DM Sans font to the body or globally */
+body {
+  font-family: 'DM Sans', sans-serif;
+}
